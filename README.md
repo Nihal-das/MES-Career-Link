@@ -84,7 +84,7 @@ npm run dev
 Full docs are available in the `docs/` folder and are ready to be published via GitHub Pages using [Docsify](https://docsify.js.org).  
 You can view the live documentation at:  
 ```
-https://your‑username.github.io/MES‑Career‑Link/
+https://your‑Nihal-das.github.io/MES‑Career‑Link/
 ```
 
 ---
