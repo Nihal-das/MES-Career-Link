@@ -1,0 +1,99 @@
+/* Side Navigation Panel */
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #FF5722, #D84315); /* #ff5722 ; */
+  border-right: 1px solid #e5e7eb; /* Subtle outline */
+  overflow-y: auto;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 1rem;
+
+}
+
+/* Section Title */
+.sidenav h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  color: #fdf6ec; /* Dark Gray */
+  font-weight: 600;
+  text-align: center;
+  font-family: 'Pacifico',sans-serif;
+}
+
+/* Nav Item */
+.sidenav .nav-item {
+  margin-bottom: 1rem;
+}
+
+/* Nav Link */
+.sidenav .nav-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: #212121; /* Slate gray */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Optional icon spacing (uncomment if needed) */ 
+
+.sidenav .nav-link .icon {
+  margin-right: 0.75rem;
+  font-size: 1.3rem;
+}
+
+
+/* Hover Effect */
+.sidenav .nav-link:hover {
+  background-color: #a94444;
+  color: #111827;
+  transform: translateX(4px);
+  box-shadow: inset 2px 0 0 #fdf6ec;
+}
+
+
+
+/* Active State */
+.sidenav .nav-link.active {
+  background-color: #80c7e1;
+  color: #edebe5;
+  font-weight: 600;
+  border-left: 4px solid #fdf6ec;
+}
+
+.search-drawer {
+  position: fixed;
+  top: 0;
+  left: 250px; /* Adjust based on your sidebar width */
+  width: 400px;
+  height: 100vh;
+  background-color: #ffffff;
+  border-left: 1px solid #ddd;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  z-index: 999;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  animation: slideInLeft 0.3s forwards;
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

@@ -1,0 +1,12 @@
+package com.mes_career_link.mes_career_link;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class MesCareerLinkApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(MesCareerLinkApplication.class, args);
+	}
+}

@@ -1,0 +1,84 @@
+/* Glassmorphism Base Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  /* Scrollbar for chat messages */
+  .overflow-auto::-webkit-scrollbar {
+    width: 8px;
+  }
+  .overflow-auto::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+  .overflow-auto::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Chat bubbles */
+  .bg-light {
+    background-color: #f8f9fa !important;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 0.95rem;
+  }
+  
+  /* Chat messages from self */
+  .justify-content-end .bg-light {
+    background-color: #d1e7dd !important; /* Light green bubble */
+    color: #0f5132;
+  }
+  
+  /* Chat messages from others */
+  .justify-content-start .bg-light {
+    background-color: #f8d7da !important; /* Light red bubble */
+    color: #842029;
+  }
+  
+  /* Shared post image */
+  .shared-post-image {
+    border-radius: 0.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border: 1px solid #ccc;
+  }
+  
+  /* Input group */
+  .input-group .form-control {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .input-group .btn {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  
+  /* Connection box */
+  .vstack .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    transition: transform 0.2s ease-in-out, background-color 0.3s;
+  }
+  .vstack .glass-card:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Profile image */
+  .rounded-circle {
+    object-fit: cover;
+    border: 2px solid #fff;
+  }
+  
+  
+  /* Fonts and global tweaks */
+  h2, .fw-bold {
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .text-muted {
+    font-style: italic;
+  }
+  
